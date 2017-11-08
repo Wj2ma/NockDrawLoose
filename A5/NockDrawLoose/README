@@ -1,0 +1,43 @@
+Compilation:
+
+Run:
+premake4 gmake && make
+cd A5/NockDrawLoose
+premake4 gmake && make && ./NockDrawLoose
+
+Manual:
+There are instructions on how to play the game in the game itself. However, dev mode
+options are hidden and can be accessed by pressing D while in game. You will know you are
+in dev mode when there is a "DEVELOPER MODE" label at the top right of the screen. In dev
+mode, you can do a number of things to test my objectives. Below, I have listed the
+available commands. Note that a lot of these (namely the view transformations) will make
+the view very unappealing, but it is purely for testing purposes.
+
+P - Transform view and perspective to the light source to see how shadows are created.
+S - Toggle shadows.
+T - Toggle textures.
+R - Toggle transparency.
+L - Toggle line showing initial direction of arrow.
+B - Toggle aim mode.
+A - Toggle instant arrow.
+V - Translate view some other hardcoded area to see that the sky box did not move.
+Arrow Keys - Look around.
+Z - Move left.
+C - Move right.
+
+Objectives Implemented:
+
+1. Modelling the scene.
+2. User interface (main menu, menu, game over screen).
+3. Texture mapping (every object has a texture).
+4. Shadows using depth map in the form of a texture.
+5. Key frame animation using linear interpolation (moving targets).
+6. Synchronized sound.
+7. Static collision detection (arrow hitting still target, ground, or crate).
+8. Dynamic collision detection (arrow hitting moving target).
+9. Physics engine (gravity, mass of bow, mass of arrow, bow string constant).
+10. Transparency using alpha value (translucent bow).
+
+Extra Objectives:
+
+Sky box with its reflection on a puddle.
